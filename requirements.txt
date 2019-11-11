@@ -1,0 +1,8 @@
+# ===================================================================
+# plottwist-config requirements file
+# ===================================================================
+pytest
+pytest-cov
+coveralls
+artellapipe-config
+tpPyUtils

@@ -1,0 +1,20 @@
+language: python
+before_install:
+- pip install pycodestyle
+install:
+- pip install -r requirements.txt
+- python setup.py install
+script:
+- find . -name \*.py -exec pycodestyle --max-line-length=120 --ignore=E402 {} +
+- pytest --cov=plottwist
+after_success:
+- coveralls
+deploy:
+  password:
+    secure: x3zdMb54PrMphm+mprjxDMNF7kxW85BZKtTIjbgyO3gKiQhDHtjvT7MCAZRbDLmHXnkLf6UYK318Fh/A6Rc1AlZNL8kqMxtI/tuPvJamkvNr8T17VMQysDsjRhytdU4rGs9UFieTGcq7Iekmzqnp0RV8ncQheiMmSmb2ZWwyHp3LBqlB3lG1NrBO70WkKM6DYx89jYyphU+soRusko4xKCCWNePYDIilPaVRZWSAQb/W/I9SOFrxtLBmK3kQSaWrNUxjinAUK8OBOKvi60wE9P8C3VQieQ8cKGZOLHB4EEyBdDGxSEtjigMb6WZX9CL9zyiiiiYpcd7LbyAHfmFXS+5N6iUSrJwvyLd1qU6FAZy3Y6Mdq5b/sLmKkNx+7XBjkch3TITflRqBn+C11XWWQpwVdbs5GRrC1G8Qu5a7dt3mKAPfq230YSsZMLqy9dsMO16n8bVoH2ZIQJQZ+nQm0//2ZHuh4n02Cf6Y/wS+tahrjR6GAV1Gc2BdjVhtVm5WRuzXw9CtBXBvLl7qOd/ge1D7+vJRRjUc8CxK/HR6/pxstrHYMbj636yFe9yQe1uksdfYp8PUpncK11EP2ZXmUdI4yzj4lkHR41cgKLLAeISXd88TKvMRd3yeetCUveNMK89Umguq3WrUazRrNXAqBh4t2JaYyY16VOSYqjUWzl4=
+  skip_cleanup: true
+  provider: pypi
+  user: tpoveda
+  on:
+    branch: master
+    tags: true
