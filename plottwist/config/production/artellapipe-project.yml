@@ -17,6 +17,8 @@ departments:
   - Grooming
   - Rigging
   - Layout
+  - Lighting
+  - Fx
 
 # Define configuration variables for project progress bar
 progress_bar:
