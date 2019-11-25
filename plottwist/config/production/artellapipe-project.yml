@@ -22,8 +22,8 @@ departments:
 
 # Define configuration variables for project progress bar
 progress_bar:
-  color0: "245, 180, 148"
-  color1: "75, 70, 170"
+  color0: "58, 92, 84"
+  color1: "213, 173, 0"
 
 # Defines available libs
 libs:
@@ -39,6 +39,7 @@ tools:
   - artellamanager
   - artellauploader
   - assetsmanager
-  - assetslibray
+  - assetslibrary
   - namemanager
+  - lightrigsmanager
   - modelchecker

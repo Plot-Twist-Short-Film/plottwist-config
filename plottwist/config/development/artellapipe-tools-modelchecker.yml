@@ -6,6 +6,9 @@ icon: modelchecker
 # URL to tool documentation web page
 url: https://plot-twist-short-film.github.io/plottwist-docs/pipeline/pipeline/tools/modelchecker/
 
+# Defines whether this needs Kitsu data to work or not
+kitsu_login: False
+
 pyblish_plugins:
   - CollectGeometry
   - ValidateHardEdges
