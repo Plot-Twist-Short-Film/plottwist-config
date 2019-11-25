@@ -6,6 +6,9 @@ icon: assetslibrary
 # URL to tool documentation web page
 url: https://plot-twist-short-film.github.io/plottwist-docs/pipeline/pipeline/tools/assetslibrary/
 
+# Defines whether this needs Kitsu data to work or not
+kitsu_login: True
+
 supported_files:
   "Rig":
     ma

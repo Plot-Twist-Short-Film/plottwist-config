@@ -5,3 +5,6 @@ icon: artellamanager
 
 # URL to tool documentation web page
 url: https://plot-twist-short-film.github.io/plottwist-docs/pipeline/pipeline/tools/artellamanager/
+
+# Defines whether this needs Kitsu data to work or not
+kitsu_login: False

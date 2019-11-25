@@ -5,3 +5,6 @@ icon: bugtracker
 
 # URL to tool documentation web page
 url: https://plot-twist-short-film.github.io/plottwist-docs/pipeline/pipeline/tools/bugtracker/
+
+# Defines whether this needs Kitsu data to work or not
+kitsu_login: False
