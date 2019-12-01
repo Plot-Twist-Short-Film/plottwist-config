@@ -76,7 +76,7 @@ templates:
 - _Serializable_classname: Template
   _Serializable_version: '1.0'
   name: asset_path
-  pattern: '{project_path}Assets/{asset_type}/{asset_name}'
+  pattern: '{@assets_path}/{asset_type}/{asset_name}'
 - _Serializable_classname: Template
   _Serializable_version: '1.0'
   name: rig
@@ -100,11 +100,15 @@ templates:
 - _Serializable_classname: Template
   _Serializable_version: '1.0'
   name: lightrig
-  pattern: '{assets_path}/Scripts/Departments/__working__/Lighting/LightSets/{light_rig_name}'
+  pattern: '{@lightrigs}/{light_rig_name}'
 - _Serializable_classname: Template
   _Serializable_version: '1.0'
   name: lightrigs
-  pattern: '{assets_path}/Scripts/Departments/__working__/Lighting/LightSets'
+  pattern: '{@assets_path}/Scripts/Departments/__working__/Lighting/LightSets'
+- _Serializable_classname: Template
+  _Serializable_version: '1.0'
+  name: assets_path
+  pattern: '{project_path}Assets'
 tokens:
 - _Serializable_classname: Token
   _Serializable_version: '1.0'

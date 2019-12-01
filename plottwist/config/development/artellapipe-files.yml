@@ -1,5 +1,6 @@
 # Base Configuration for Artella Files for Plot Twist
 
+# Defines dictionary of file types (textures, model, etc) used by the project
 files:
   textures:
     class: plottwist.files.texture.PlotTwistTextureAssetFile
