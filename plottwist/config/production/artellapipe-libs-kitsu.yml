@@ -8,3 +8,6 @@ project_url: "https://edouardsisternas.cg-wire.com/productions/3b22ba92-c22e-449
 
 # Defines Gazu API url of the Kitsu project
 gazu_api: "https://edouardsisternas.cg-wire.com/api"
+
+# Defines custom attribute to use to identify Kitsu assets
+custom_id_attribute: "id"

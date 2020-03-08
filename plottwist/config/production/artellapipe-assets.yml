@@ -1,5 +1,6 @@
 # Base Configuration for Artella Assets for Plot Twist
 
+# Defines dictionary of asset types (Props, Characters, etc) used by the project
 types:
   Props:
     class: plottwist.assets.prop.PlotTwistProp
@@ -17,7 +18,7 @@ types:
       - rig
       - groom
 
-must_files:
+must_file_types:
   - textures
   - model
   - shading

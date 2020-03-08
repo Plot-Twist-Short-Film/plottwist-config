@@ -3,6 +3,7 @@
 # Defines dictionary of file types (textures, model, etc) used by the project
 files:
   textures:
+    name: Textures
     class: plottwist.files.texture.PlotTwistTextureAssetFile
     extensions:
       - tx
@@ -10,22 +11,37 @@ files:
       - jpg
       - jpeg
   model:
+    name: Model
     class: plottwist.files.model.PlotTwistModelAssetFile
     extensions:
       - ma
   shading:
+    name: Shading
     class: plottwist.files.shading.PlotTwistShadingAssetFile
     extensions:
       - ma
+  shaders:
+    name: Shaders
+    class: plottwist.files.shader.PlotTwistShaderAssetFile
+    extension:
+      - pshader
+  shadersmapping:
+    name: Shaders Map
+    class: plottwist.files.shader.PlotTwistShaderMappingAssetFile
+    extensions:
+      - json
   rig:
+    name: Rig
     class: plottwist.files.rig.PlotTwistRigAssetFile
     extensions:
       - ma
   groom:
+    name: Groom
     class: plottwist.files.groom.PlotTwistGroomAssetFile
     extensions:
       - ma
   alembic:
+    name: Alembic
     class: plottwist.files.alembic.PlotTwistAlembicAssetFile
     extensions:
       - abc
@@ -35,3 +51,9 @@ files:
     template: lightrig
     extensions:
       - ma
+  shader:
+    name: Shader
+    class: plottwist.files.shader.PlotTwistShaderFile
+    template: shader
+    extensions:
+      - pshader

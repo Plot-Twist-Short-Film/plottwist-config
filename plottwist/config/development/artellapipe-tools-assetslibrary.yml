@@ -4,15 +4,18 @@
 icon: assetslibrary
 
 # URL to tool documentation web page
-url: https://plot-twist-short-film.github.io/plottwist-docs/pipeline/pipeline/tools/assetslibrary/
+help_url: https://plot-twist-short-film.github.io/plottwist-docs/pipeline/pipeline/tools/assetslibrary/
 
 # Defines whether this needs Kitsu data to work or not
 kitsu_login: True
 
 supported_files:
-  "Rig":
-    ma
-#  "Alembic":
-#    abc
-#  "Standin":
-#    ass
+  - "Rig":
+      rig:
+        ma: reference
+#  - "GPU Cache":
+#      gpualembic:
+#        abc: import
+#  - "Standin":
+#      standin:
+#        ass: import
