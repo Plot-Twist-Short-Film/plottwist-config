@@ -11,6 +11,7 @@ kitsu_login: False
 
 pyblish_plugins:
   CollectGeometry: {}
+  CollectPlotTwistProxyMesh: {}
   ValidateStudentLicense:
     optional: True
   ValidateDisplayLayers:
@@ -20,6 +21,10 @@ pyblish_plugins:
   ValidateCleanUnknownNodes:
     optional: True
   ValidateCleanUnusedPlugins:
+    optional: True
+  ValidateCleanTurtleNodes:
+    optional: True
+  ValidateCleanGarbageNodes:
     optional: True
   ValidateHardEdges:
     optional: True
@@ -58,4 +63,8 @@ pyblish_plugins:
   ValidateUncenteredPivots:
     optional: True
   ValidateUnfrozenTransforms:
+    optional: True
+  ValidatePlotTwistModelingHierarchy:
+    optional: True
+  ValidatePlotTwistProxyMesh:
     optional: True

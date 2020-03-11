@@ -26,10 +26,45 @@ rules:
 - _Serializable_classname: Rule
   _Serializable_version: '1.0'
   auto_fix: false
-  description: Defines the name of geometry nodes
-  expression: '{description}_{side}_{rule_name}_{id}'
+  description: Defines the name of DCC nodes
+  expression: '{description}_{side}_{node_type}_{id}'
   iterator_format: '####'
-  name: geo
+  name: node
+- _Serializable_classname: Rule
+  _Serializable_version: '1.0'
+  auto_fix: false
+  description: Root node for modeling
+  expression: '{root_group}'
+  iterator_format: '@'
+  name: root_group
+- _Serializable_classname: Rule
+  _Serializable_version: '1.0'
+  auto_fix: false
+  description: Geometry group for modeling
+  expression: '{geo_group}'
+  iterator_format: '@'
+  name: geo_group
+- _Serializable_classname: Rule
+  _Serializable_version: '1.0'
+  auto_fix: false
+  description: High version for modeling
+  expression: '{high_group}'
+  iterator_format: '@'
+  name: high_group
+- _Serializable_classname: Rule
+  _Serializable_version: '1.0'
+  auto_fix: false
+  description: Proxy version for modeling
+  expression: '{proxy_group}'
+  iterator_format: '@'
+  name: proxy_group
+- _Serializable_classname: Rule
+  _Serializable_version: '1.0'
+  auto_fix: false
+  description: Defines the name used by asset proxy geometries
+  expression: '{proxy_geo}_{side}_{geo}_{id}'
+  iterator_format: '####'
+  name: proxy_geo
 template_tokens:
 - _Serializable_classname: TemplateToken
   _Serializable_version: '1.0'
@@ -137,7 +172,7 @@ tokens:
     value: []
 - _Serializable_classname: Token
   _Serializable_version: '1.0'
-  default: -1
+  default: 1
   description: 'The format of the id
 
 
@@ -207,7 +242,7 @@ tokens:
     value: []
 - _Serializable_classname: Token
   _Serializable_version: '1.0'
-  default: -1
+  default: 1
   description: ''
   name: side
   override_value: ''
@@ -231,3 +266,78 @@ tokens:
     - rule_name
     value:
     - ''
+- _Serializable_classname: Token
+  _Serializable_version: '1.0'
+  default: 0
+  description: ''
+  name: node_type
+  override_value: ''
+  values:
+    key: []
+    value: []
+- _Serializable_classname: Token
+  _Serializable_version: '1.0'
+  default: 1
+  description: ''
+  name: root_group
+  override_value: ''
+  values:
+    key:
+    - root
+    value:
+    - root
+- _Serializable_classname: Token
+  _Serializable_version: '1.0'
+  default: 1
+  description: ''
+  name: geo_group
+  override_value: ''
+  values:
+    key:
+    - geo
+    value:
+    - geo
+- _Serializable_classname: Token
+  _Serializable_version: '1.0'
+  default: 1
+  description: ''
+  name: high_group
+  override_value: ''
+  values:
+    key:
+    - high
+    value:
+    - high
+- _Serializable_classname: Token
+  _Serializable_version: '1.0'
+  default: 1
+  description: ''
+  name: proxy_group
+  override_value: ''
+  values:
+    key:
+    - proxy
+    value:
+    - proxy
+- _Serializable_classname: Token
+  _Serializable_version: '1.0'
+  default: 0
+  description: ''
+  name: proxy_geo
+  override_value: ''
+  values:
+    key:
+    - proxy
+    value:
+    - proxy
+- _Serializable_classname: Token
+  _Serializable_version: '1.0'
+  default: 0
+  description: ''
+  name: geo
+  override_value: ''
+  values:
+    key:
+    - geo
+    value:
+    - geo
