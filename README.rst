@@ -3,7 +3,7 @@ plottwist-config
 
 Plot Twist Module that contains project-specific configuration files
 
-.. image:: https://travis-ci.com/ArtellaPipe/plottwist-config.svg?branch=master&kill_cache=1
+.. image:: https://travis-ci.com/Plot-Twist-Short-Film/plottwist-config.svg?branch=master&kill_cache=1
     :target: https://travis-ci.com/Plot-Twist-Short-Film/plottwist-config
 
 .. image:: https://coveralls.io/repos/github/Plot-Twist-Short-Film/plottwist-config/badge.svg?branch=master&kill_cache=1
