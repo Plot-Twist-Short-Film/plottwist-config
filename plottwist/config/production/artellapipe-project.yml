@@ -45,11 +45,9 @@ libs:
   - kitsu
   - pyblish
   - alembic
-  - usd
 
 # Defines available tools
 tools:
-  - welcome
   - changelog
   - bugtracker
   - artellamanager
