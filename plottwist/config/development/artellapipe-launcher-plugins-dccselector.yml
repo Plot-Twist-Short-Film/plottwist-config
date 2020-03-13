@@ -5,6 +5,7 @@ maya:
   icon: color/maya
   supported_versions:
     - 2018
+    - 2019
   default_version: 2019
   departments:
     - "modeling"
