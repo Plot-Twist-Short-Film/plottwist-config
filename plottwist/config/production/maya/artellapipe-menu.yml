@@ -85,3 +85,14 @@ menus:
                 is_checkable: False
                 is_checked: False
                 load_on_startup: False
+            - id: plottwist-commands-uploadversion
+              command: "import artellapipe; artellapipe.FilesMgr().upload_working_version(notify=True)"
+              type: command
+              language: python
+              tags: ['solstice', 'upload', 'version', 'file']
+              ui:
+                label: "Upload File"
+                icon: 'upload'
+                is_checkable: False
+                is_checked: False
+                load_on_startup: False

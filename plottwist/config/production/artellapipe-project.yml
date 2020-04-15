@@ -45,6 +45,7 @@ libs:
   - kitsu
   - pyblish
   - alembic
+  - usd
 
 # Defines available tools
 tools:
@@ -60,3 +61,4 @@ tools:
   - modelchecker
   - dependenciesmanager
   - renamer
+  - customtool

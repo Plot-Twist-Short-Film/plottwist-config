@@ -49,7 +49,6 @@ libs:
 
 # Defines available tools
 tools:
-  - welcome
   - changelog
   - bugtracker
   - artellamanager

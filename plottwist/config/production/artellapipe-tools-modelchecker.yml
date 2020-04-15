@@ -26,8 +26,6 @@ pyblish_plugins:
     optional: True
   ValidateCleanGarbageNodes:
     optional: True
-  ValidateHardEdges:
-    optional: True
   ValidateLamina:
     optional: True
   ValidateNGons:
@@ -35,8 +33,6 @@ pyblish_plugins:
   ValidateNonManifoldEdges:
     optional: True
   ValidateOpenEdges:
-    optional: True
-  ValidatePoles:
     optional: True
   ValidateStarLike:
     optional: True
