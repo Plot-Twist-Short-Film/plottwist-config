@@ -10,57 +10,69 @@ help_url: https://plot-twist-short-film.github.io/plottwist-docs/pipeline/pipeli
 kitsu_login: False
 
 pyblish_plugins:
-  CollectGeometry: {}
+  CollectPlotTwistGeometry: {}
   CollectPlotTwistProxyMesh: {}
   ValidateStudentLicense:
-    optional: True
+    optional: False
   ValidateDisplayLayers:
-    optional: True
+    optional: False
   ValidateNoShadersInScene:
-    optional: True
+    optional: False
   ValidateCleanUnknownNodes:
-    optional: True
+    optional: False
   ValidateCleanUnusedPlugins:
-    optional: True
+    optional: False
   ValidateCleanTurtleNodes:
-    optional: True
+    optional: False
   ValidateCleanGarbageNodes:
-    optional: True
+    optional: False
   ValidateLamina:
-    optional: True
+    optional: False
   ValidateNGons:
-    optional: True
+    optional: False
   ValidateNonManifoldEdges:
-    optional: True
+    optional: False
   ValidateOpenEdges:
-    optional: True
+    optional: False
   ValidateStarLike:
-    optional: True
+    optional: False
   ValidateTriangles:
-    optional: True
+    optional: False
   ValidateNormals:
-    optional: True
+    optional: False
   ValidateZeroAreaFaces:
-    optional: True
+    optional: False
   ValidateZeroLengthEdges:
-    optional: True
+    optional: False
   ValidateCleanHistory:
-    optional: True
+    optional: False
   ValidateGeometryDisplayLayers:
-    optional: True
+    optional: False
   ValidateGeometrySmoothPreview:
-    optional: True
+    optional: False
   ValidateEmptyGroups:
-    optional: True
+    optional: False
   ValidateGeometryShaders:
-    optional: True
+    optional: False
   ValidateParentGeometry:
-    optional: True
+    optional: False
   ValidateUncenteredPivots:
-    optional: True
+    optional: False
   ValidateUnfrozenTransforms:
-    optional: True
+    optional: False
   ValidatePlotTwistModelingHierarchy:
-    optional: True
+    optional: False
   ValidatePlotTwistProxyMesh:
-    optional: True
+    optional: False
+  ValidateGeometryVisibility:
+    optinoal: False
+  ValidateHidedNodes:
+    optional: False
+  ValidatePlotTwistModelingNomenclature:
+    optional: False
+  ValidatePlotTwistProxyMeshNomenclature:
+    optional: False
+  RemoveUnusedReferences:
+    optional: False
+  RemoveUnusedDeformers:
+    optional: False
