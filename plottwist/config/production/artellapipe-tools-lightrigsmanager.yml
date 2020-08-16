@@ -4,7 +4,7 @@
 icon: lightrigsmanager
 
 # URL to tool documentation web page
-help_url: https://plot-twist-short-film.github.io/plot-twist-docs/pipeline/pipeline/tools/lightrigsmanager/
+help_url: https://plot-twist-short-film.github.io/plottwist-docs/pipeline/pipeline/tools/lightrigsmanager/
 
 # Defines whether this needs Kitsu data to work or not
 kitsu_login: False
