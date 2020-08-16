@@ -2,4 +2,4 @@
 
 # Defines path where Playblast presets are located
 presets_paths:
-  - "Assets/Scripts/Departments/Pipeline/PlayblastPresets"
+  - "Assets/Departments/Pipeline/PlayblastPresets"
