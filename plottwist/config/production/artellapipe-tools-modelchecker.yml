@@ -34,8 +34,6 @@ pyblish_plugins:
     optional: False
   ValidateOpenEdges:
     optional: False
-  ValidateStarLike:
-    optional: False
   ValidateTriangles:
     optional: False
   ValidateNormals:
