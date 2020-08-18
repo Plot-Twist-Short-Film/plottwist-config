@@ -89,10 +89,21 @@ menus:
               command: "import artellapipe; artellapipe.FilesMgr().upload_working_version(notify=True)"
               type: command
               language: python
-              tags: ['solstice', 'upload', 'version', 'file']
+              tags: ['plottwist', 'upload', 'version', 'file']
               ui:
                 label: "Upload File"
                 icon: 'upload'
+                is_checkable: False
+                is_checked: False
+                load_on_startup: False
+            - id: plottwist-commands-openartellaurl
+              command: "import artellapipe; artellapipe.FilesMgr().get_artella_url(open=True)"
+              type: command
+              language: python
+              tags: ['plottwist', 'open', 'artella', 'url']
+              ui:
+                label: "Open Artella URL"
+                icon: "artella"
                 is_checkable: False
                 is_checked: False
                 load_on_startup: False
