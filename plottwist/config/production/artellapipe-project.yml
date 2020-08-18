@@ -50,6 +50,7 @@ libs:
   - kitsu
   - pyblish
   - alembic
+  - arnold
   - usd
 
 # Defines available tools
