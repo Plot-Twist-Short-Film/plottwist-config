@@ -3,6 +3,9 @@
 # Defines the Artella project type (indie or enterprise)
 project_type: "enterprise"
 
+# Defines the Artella project URL in Artella
+artella_url: "https://creators.artella.com/project/3wvyd4uvw7sf7qbalzkptb56wy/files/p"
+
 # Defines Artella project ID number
 id_number: "9"
 
