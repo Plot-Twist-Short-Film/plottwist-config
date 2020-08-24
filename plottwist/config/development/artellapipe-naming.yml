@@ -154,7 +154,7 @@ templates:
 - _Serializable_classname: Template
   _Serializable_version: '1.0'
   name: lightrigs
-  pattern: '{@project_path}/Assets/Departments/Lighting/LightSets'
+  pattern: '{@project_path}/Assets/LightSets'
 - _Serializable_classname: Template
   _Serializable_version: '1.0'
   name: project_path
